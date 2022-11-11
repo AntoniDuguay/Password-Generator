@@ -10,11 +10,11 @@ N/A
 
 ## Usage
 
-Go to this link (coming soon...)
+Go to this link https://antoniduguay.github.io/Password-Generator/
 
 ## Screenshot
 
-(coming soon...)
+![image](https://user-images.githubusercontent.com/115761891/201241187-25e4f8d5-2dab-4e79-856e-4246767324ff.png)
 
 ## Credits
 
