@@ -5,7 +5,6 @@
   var specialCharacters = "!@#$%^&*()_+-?"
   var finalpasswordcharacterSelection = ""
   var finalPassword = ""
-
   var passwordLength = prompt("Choose a password length between 8 and 128")
   if (passwordLength > 128 || passwordLength < 8){
     alert("password length must be between 8 - 128")
@@ -16,6 +15,7 @@
   var isLowercase = confirm("do you want lowercase characters")
   var haveNumbers = confirm("do you want numbers in your password")
   var havespecialCharacters = confirm("do you want special characters in your password")
+
 
   if (isUppercase){
     finalpasswordcharacterSelection += upperCase
@@ -33,12 +33,13 @@
     finalpasswordcharacterSelection += specialCharacters
   }
 
-  for (var i = 0; i < passwordLength; i++) {
-    var finalPassword = finalpasswordcharacterSelection[Math.floor(Math.random() * passwordLength)];
-
+  
+    for ( var i = 0; i < passwordLength; i++ ) {
+        finalPassword += finalpasswordcharacterSelection[(Math.floor(Math.random() * passwordLength))];
+    }
     return finalPassword;
-  }
 }
+  
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
