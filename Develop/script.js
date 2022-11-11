@@ -34,9 +34,9 @@
   }
 
   
-    for ( var i = 0; i < passwordLength; i++ ) {
-        finalPassword += finalpasswordcharacterSelection[(Math.floor(Math.random() * passwordLength))];
-    }
+  for ( var i = 0; i < passwordLength; i++ ) {
+    finalPassword += finalpasswordcharacterSelection[(Math.floor(Math.random() * finalpasswordcharacterSelection.length))];
+  }
     return finalPassword;
 }
   
